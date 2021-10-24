@@ -89,3 +89,158 @@ body {
    padding: 5px;
    border-radius: 50%;
 }
+
+.slide {
+   position: relative;
+   overflow: hidden;
+   border-radius: 20px;
+   min-height: 400px;
+   display: flex;
+   align-items: center;
+   padding: 100px;
+}
+
+.slide-text-light {
+   background-color: #ccc;
+   color: #fff;
+}
+
+.slide-content {
+   max-width: 400px;
+   position: relative;
+}
+
+.slide-title {
+   margin: 0px 0px 15px 0px;
+   font-weight: 700;
+   font-size: 50px;
+   line-height: 102%;
+}
+
+.slide-text {
+   font-size: 16px;
+   line-height: 143%;
+   font-weight: bold;
+   margin: 0px 0px 30px 0px;
+}
+
+.button-primary {
+   background-color: #F47322;
+   color: #fff;
+}
+
+.button-default {
+   background-color: #fff;
+   color: #5F5F61;
+}
+
+.button {
+   border-radius: 25px;
+   padding: 11px 50px;
+   display: inline-block;
+   text-decoration: none;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 164%;
+}
+
+.slide-summer {
+   background-image: url(../img/summer.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.slide:before {
+   content: '';
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+}
+
+.promo {
+   padding: 50px 0px 50px 0px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.card {
+   flex-basis: 50%;
+   border-radius: 20px;
+   overflow: hidden;
+   position: relative;
+   padding: 32px;
+   max-width: 570px;
+   min-height: 380px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.card:before {
+   content: '';
+   z-index: -1;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.card-text-light {
+   color: #fff;
+
+}
+
+.card-header {
+}
+.card-title {
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 95%;
+   margin: 4px 0px 21px 0px;
+}
+.card-text {
+   max-width: 200px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 143%;
+}
+.card-footer {
+}
+.card-price {
+   display: block;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 95%;
+   margin: 0px 0px 8px 0px;
+}
+.card-delivery {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 143%;
+   display: block;
+   margin: 0px 0px 20px 0px;
+}
+
+.card-image {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -2;
+   object-fit: cover;
+}
+
+
+
+/* .sweet-basket {
+   background: url(../img/sweet-basket.png)no-repeat center / cover;
+} */
